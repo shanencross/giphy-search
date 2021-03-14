@@ -18,7 +18,8 @@ module.exports = {
       title: 'Giphy Search',
       template: './src/index.html',
       inject: 'body'
-    })
+    }),
+    new Dotenv()
   ],
   module: {
     rules:  [
