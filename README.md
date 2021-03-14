@@ -1,8 +1,8 @@
-# _{Application Name}_
+# Giphy Search
 
-#### _{Brief description of application}_
+#### Learning project for Epicodus class -- Use Giphy API to search for gifs
 
-#### By _**{List of contributors}**_
+#### By Shanen Cross, Garrett Brown, and Faisal Rana
 
 ## Technologies Used
 
@@ -12,20 +12,23 @@
 * JavaScript
 * jQuery
 * Webpack
+* Jest
+* ESLint
+* Babel
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+Learning project for Epicodus class for practicing APIs. Uses Giphy API to search for gifs.
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+To install and run locally:
+* Install git
+* Install [npm](https://www.npmjs.com/), the JavaScript package manager. For development, I used npm version 6.14.10
+* Use _git clone_ this repository to a local directory
+* Install the necessary modules by executing _npm install_ on the command line
+* Excute _npm run start_ on the command line to build the project and run a local server. The website will automatically open in your web browser
+* OR, execute _npm run build_ on the command line to build the project, and then open dist/index.html in your web browser.
 
 ## Known Bugs
 
@@ -35,4 +38,4 @@ None.
 
 [MIT](LICENSE)
 
-Copyright (c) 2021 Shanen Cross
+Copyright (c) 2021 Shanen Cross, Garrett Brown, and Faisal Rana
