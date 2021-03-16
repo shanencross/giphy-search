@@ -3,7 +3,8 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 
-$("#requestButton").on("click", function() {
+$("#requestButton").click(function(event) {
+    event.preventDefault();
     let request = new XMLHttpRequest();
     const url = `https://api.giphy.com/v1/gifs/search?api_key=${process.env.API_KEY}&q=ryan gosling&limit=5&offset=0&rating=g&lang=en`;
 
