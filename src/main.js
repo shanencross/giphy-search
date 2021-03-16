@@ -5,8 +5,15 @@ import './css/styles.css';
 
 $("#requestButton").click(function(event) {
     event.preventDefault();
+    let search = $('form#searchForm #searchInput').val();
+    $('#searchInput').val('')
+    let imageLimit = $('form#searchForm #imageLimitInput').val();
+    $('#imageLimitInput').val('');
+
+    console.log(search + " " + imageLimit);
+
     let request = new XMLHttpRequest();
-    const url = `https://api.giphy.com/v1/gifs/search?api_key=${process.env.API_KEY}&q=ryan gosling&limit=5&offset=0&rating=g&lang=en`;
+    const url = `https://api.giphy.com/v1/gifs/search?api_key=${process.env.API_KEY}&q=${search}&limit=${imageLimit}&offset=0&rating=g&lang=en`;
 
     request.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200)
