@@ -4,7 +4,17 @@
 	<title>Giphy Search</title>
 </head>
 <body>
-	<span id="photo"></span>
-	<button id="requestButton" class="btn btn-success">Make Request</button>
+	<form id="searchForm">
+		<div class="form-group">
+			<label for="searchInput">Search term or phrase:</label>
+			<input id="searchInput" class="form-control" type="text">
+		</div>
+		<div class="form-group">
+			<label for="imageLimitInput">Maximum number of results:</label>
+			<input id="imageLimitInput" class="form-control" type="number" min="1" max="25">
+		</div>
+		<button id="requestButton" type="submit" class="btn btn-success">Make Request</button>
+	</form>
+	<div id="results"></div>
 </body>
 </html>
