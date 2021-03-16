@@ -28,5 +28,5 @@ $("#requestButton").click(function(event) {
 });
 
 function getElements(response) {
-    $("#photo").append(`<img src="${response.data[0].images.original.url}">`);
+    $("#photo").html(`<img src="${response.data[0].images.original.url}">`);
 }   
